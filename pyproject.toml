@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "pubmed-paper-fetcher"  # Your project name (lowercase, hyphenated if needed)
+version = "0.1.0"             # The initial version of your project
+description = "A Python program to fetch PubMed papers and identify non-academic authors."
+authors = ["Your Name <your_email@example.com>"]  # Replace with your name and email
+license = "MIT"               # Add your license (optional)
+readme = "README.md"          # Specify the README file (optional)
+
+[tool.poetry.dependencies]
+python = "^3.8"               # Specify the supported Python version
+requests = "^2.28.0"          # Dependency for making API calls
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_paper_fetcher.cli:main"  # CLI entry point
